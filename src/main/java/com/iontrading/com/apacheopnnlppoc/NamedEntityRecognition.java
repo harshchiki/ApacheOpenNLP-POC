@@ -1,4 +1,4 @@
-package com.iontrading.com.apacheopnnlppoc.models.custom;
+package com.iontrading.com.apacheopnnlppoc;
 
 
 import java.io.File;
@@ -66,7 +66,7 @@ public class NamedEntityRecognition {
 	static void train(){
 		InputStreamFactory in = null;
 		try {
-			in = new MarkableFileInputStreamFactory(new File("InstrumentTrainingSet.txt"));
+			in = new MarkableFileInputStreamFactory(new File("InstrumentTrainingSet_NER.txt"));
 		} catch (FileNotFoundException e2) {
 			e2.printStackTrace();
 		}

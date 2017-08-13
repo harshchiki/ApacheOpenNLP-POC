@@ -143,8 +143,8 @@ public class StandardModels {
 		TokenNameFinderModel tokenNameFinderModel = null;
 		InputStream is;
 		try {
-//			is = new FileInputStream("en-ner-person.bin");
-			is = new FileInputStream("en-custom-model.bin");
+			is = new FileInputStream("en-ner-person.bin");
+//			is = new FileInputStream("en-custom-model.bin");
 			try {
 				tokenNameFinderModel = new TokenNameFinderModel(is);
 				nameFinder = new NameFinderME(tokenNameFinderModel);
