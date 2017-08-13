@@ -33,7 +33,7 @@ import opennlp.tools.util.Span;
 import opennlp.tools.util.TrainingParameters;
 
 // Custom named entity recognition
-public class NamedEntityRecognition {
+public class InstrumentNER {
 	public static void main(String[] args) {
 		System.out.println("Preparing training set");
 		new InstrumentTrainingDataGenerator().generateTrainingSet();
