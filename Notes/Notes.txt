@@ -1,0 +1,7 @@
+Tokenization
+------------------
+Though splitting on whitespace works in some instances, most applications will need
+to handle punctuation, acronyms, email addresses, URLs, and numbers in order to
+provide the most benefit. Additionally, different applications often will have different
+tokenization requirements. 
+

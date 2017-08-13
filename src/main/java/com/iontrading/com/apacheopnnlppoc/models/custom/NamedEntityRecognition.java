@@ -32,7 +32,7 @@ import opennlp.tools.util.PlainTextByLineStream;
 import opennlp.tools.util.Span;
 import opennlp.tools.util.TrainingParameters;
 
-
+// Custom named entity recognition
 public class NamedEntityRecognition {
 	public static void main(String[] args) {
 		System.out.println("Preparing training set");
@@ -48,6 +48,7 @@ public class NamedEntityRecognition {
 		NameFinderME nameFinder = new NameFinderME(StandardModels.getTokenNameFinderModel());
 		// prev DE0001143303
 		// refdata DE0001142644
+//		String str = "BID - 37,000,000  US CONV GILT  RegS 1.5 [ DE0001142644 ] S/D 21/";
 		String str = "BID - 37,000,000  US CONV GILT  RegS 1.5 22-Mar-2001 [ DE0001142644 ] S/D 21/";
 		String[] strArray = StandardModels.getTokenizer().tokenize(str);
 		Span nameSpans[] = nameFinder.find(strArray);
